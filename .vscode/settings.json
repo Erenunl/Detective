@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Detectives2.sln"
+    "dotnet.defaultSolution": "Detective.sln"
 }
