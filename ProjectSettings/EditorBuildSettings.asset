@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/SorguOdasi.unity
+    guid: 09e8e0c502ef16044a7bb4f86acec992
+  - enabled: 1
+    path: Assets/Scenes/Street1.unity
+    guid: f290ddd37d47bc543886d920d13941f0
+  - enabled: 1
+    path: Assets/Scenes/Bar.unity
+    guid: ca316fc3859a5fc4b8adaee17b746401
   m_configObjects: {}
