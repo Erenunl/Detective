@@ -83,7 +83,7 @@ public class AdvanceDialogueManager : MonoBehaviour
 
         if (currentConversation.actors[stepNum] == DialogueActors.Branch)
         {
-            for(int i = 0; i < currentConversation.optionText.Length; i++)
+            for (int i = 0; i < currentConversation.optionText.Length; i++)
             {
                 if (currentConversation.optionText[i] == null)
                 {
@@ -102,7 +102,7 @@ public class AdvanceDialogueManager : MonoBehaviour
         }
 
 
-        if(stepNum < currentConversation.dialogue.Length) 
+        if (stepNum < currentConversation.dialogue.Length)
         {
             dialogueText.text = currentConversation.dialogue[stepNum];
         }
@@ -127,11 +127,11 @@ public class AdvanceDialogueManager : MonoBehaviour
                 {
                     currentSpeaker = actorSO[i].actorName;
                 }
-                else
-                {
-                    currentSpeaker = currentConversation.randomActorName;
-                }
             }
+        }
+        else
+        {
+            currentSpeaker = currentConversation.randomActorName;
         }
     }
 
@@ -141,16 +141,16 @@ public class AdvanceDialogueManager : MonoBehaviour
         foreach (GameObject button in optionButton)
             button.SetActive(false);
 
-            if (optionNum  == 0)
-                currentConversation = currentConversation.option0;
-            if (optionNum == 1)
-                currentConversation = currentConversation.option1;
-            if (optionNum == 2)
-                currentConversation = currentConversation.option2;
-            if (optionNum == 3)
-                currentConversation = currentConversation.option3;
+        if (optionNum == 0)
+            currentConversation = currentConversation.option0;
+        if (optionNum == 1)
+            currentConversation = currentConversation.option1;
+        if (optionNum == 2)
+            currentConversation = currentConversation.option2;
+        if (optionNum == 3)
+            currentConversation = currentConversation.option3;
 
-            stepNum = 0;
+        stepNum = 0;
     }
 
     public void InitiateDialogue(NPCDialogue npcDialogue)
