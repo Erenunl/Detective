@@ -6,6 +6,7 @@ TagManager:
   tags:
   - d1
   - SpeakerNPC
+  - OptionButton
   layers:
   - Default
   - TransparentFX

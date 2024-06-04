@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb11b7eba0580144a8089f19ad9525f5, type: 3}
   m_Name: Option1
   m_EditorClassIdentifier: 
-  actors: 
+  actors: 0500000006000000
   randomActorName: 
   randomActorPortrait: {fileID: 0}
-  dialogue: []
+  dialogue:
+  - option1 1
+  - option1 2
   optionText: []
   option0: {fileID: 0}
   option1: {fileID: 0}

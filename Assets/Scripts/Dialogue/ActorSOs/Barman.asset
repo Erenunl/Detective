@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 785bae3ba49189447bf1563fbc871e14, type: 3}
-  m_Name: DrunkGuy
+  m_Name: Barman
   m_EditorClassIdentifier: 
-  actorName: 
+  actorName: Barman
   actorPortrait: {fileID: 0}

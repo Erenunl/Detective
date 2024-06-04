@@ -17,7 +17,7 @@ public class NPCDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        advanceDialogueManager = GameObject.Find("DialogueManagger").GetComponent<AdvanceDialogueManager>();
+        advanceDialogueManager = GameObject.Find("DialogueManager").GetComponent<AdvanceDialogueManager>();
         speechBubbleRenderer = GetComponent<SpriteRenderer>();
         speechBubbleRenderer.enabled = false;
     }
@@ -30,7 +30,7 @@ public class NPCDialogue : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "SpeakerNPC" && !dialogueInitiated) 
+        if (collision.gameObject.tag == "Player" && !dialogueInitiated) 
         {
             speechBubbleRenderer.enabled = true;
 
@@ -52,11 +52,11 @@ public class NPCDialogue : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "SpeakerNPC")
+        if(collision.gameObject.tag == "Player")
         {
             speechBubbleRenderer.enabled= false;
 
-            //advanceDialogueManager.TurnOffDialogue();
+            advanceDialogueManager.TurnOffDialogue();
             dialogueInitiated = false;
         }
     }
