@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Button : MonoBehaviour
 {
@@ -36,6 +38,7 @@ public class Button : MonoBehaviour
         panel1.SetActive(false);
         panel2.SetActive(false);
         panel3.SetActive(false);
+        SceneManager.LoadScene(7);
     }
     public void Openpanel1()
     {
