@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 248386575}
   - component: {fileID: 248386574}
   - component: {fileID: 248386573}
+  - component: {fileID: 248386576}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -159,7 +160,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -215,6 +216,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &248386576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248386572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1891d182181aec40a15c0665fa3be94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FollowSpeed: 10
+  yOffset: -1.8
+  target: {fileID: 906707794}
 --- !u!1001 &287702924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274,6 +290,10 @@ PrefabInstance:
     - target: {fileID: 3593007417589276961, guid: b27c7123a8aa83047b09e6039e85c4dc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328778316652114324, guid: b27c7123a8aa83047b09e6039e85c4dc, type: 3}
+      propertyPath: sceneIndex
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -505,6 +525,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &906707794 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4783856712184542123, guid: 3bd008f3594ddd948bb47680d0f2453d, type: 3}
+  m_PrefabInstance: {fileID: 1225060455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1225060455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -513,6 +538,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1160957233882882236, guid: 3bd008f3594ddd948bb47680d0f2453d, type: 3}
+      propertyPath: moveSpeed
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1209853202012863901, guid: 3bd008f3594ddd948bb47680d0f2453d, type: 3}
       propertyPath: m_Name
       value: MainRoomChar
@@ -685,7 +714,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7328778316652114324, guid: b27c7123a8aa83047b09e6039e85c4dc, type: 3}
       propertyPath: sceneIndex
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -6,12 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class Button : MonoBehaviour
 {
-    public GameObject exit,harry,jessica,pedofili,csecim,panel1,panel2,panel3;
+    public GameObject exit,harry,jessica,pedofili,csecim,panel1,panel2,Closepanel1,Closepanel2;
+    public void OpenClosepanel1()
+    {
+        panel1.SetActive(false);
+        panel2.SetActive(false);
+        }   
+    public void OpenClosepanel2()
+    {
+        panel1.SetActive(false);
+        panel2.SetActive(false);
+    }
+
     public void Opencsecim()
     {
         panel1.SetActive(false);
         panel2.SetActive(false);
-        panel3.SetActive(false);
         csecim.SetActive(true);
         harry.SetActive(false);
         jessica.SetActive(false);
@@ -37,14 +47,14 @@ public class Button : MonoBehaviour
     {
         panel1.SetActive(false);
         panel2.SetActive(false);
-        panel3.SetActive(false);
+       
         SceneManager.LoadScene(7);
     }
     public void Openpanel1()
     {
         panel1.SetActive(true);
         panel2.SetActive(false);
-        panel3.SetActive(false);
+       
         Debug.Log("hi");
         
     }
@@ -52,14 +62,8 @@ public class Button : MonoBehaviour
     {
         panel1.SetActive(false);
         panel2.SetActive(true);
-        panel3.SetActive(false);
+        
         
     }
-    public void Openpanel3()
-    {
-        panel1.SetActive(false);
-        panel2.SetActive(false);
-        panel3.SetActive(true);
-        
-    }
+    
 }

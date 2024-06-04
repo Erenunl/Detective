@@ -17,6 +17,7 @@ public class Neuro : MonoBehaviour
         if ( Input.GetKey( KeyCode.T))
      {
          Debug.Log("close");
+         
          neuro.SetActive(false);
         
      } 
